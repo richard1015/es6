@@ -6,7 +6,7 @@
 }
 
 {
-    //isFinite 数字是否有尽头
+    //Number.isFinite 数字是否有尽头
     console.log('15', Number.isFinite(15));
     console.log('NaN', Number.isFinite(NaN));
     console.log('1/0', Number.isFinite('true' / 0));
@@ -15,7 +15,7 @@
 }
 
 {
-    //isInteger 是否为整数
+    //Number.isInteger 是否为整数
     console.log('25', Number.isInteger(25));
     console.log('25.0', Number.isInteger(25.0));
     console.log('25.1', Number.isInteger(25.1));
@@ -23,7 +23,7 @@
 }
 
 {
-    //isSafeInteger 是否为 安全值范围内
+    //Number.isSafeInteger 是否为 安全值范围内
     console.log(Number.MAX_SAFE_INTEGER);
     console.log(Number.MIN_SAFE_INTEGER);
 
