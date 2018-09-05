@@ -21,4 +21,5 @@
 // import "./class/lesson5.js";
 // import "./class/lesson6.js";
 //不需要兼容包
-import "./class/lesson7.js";
+// import "./class/lesson7.js";
+import "./class/lesson8.js";
