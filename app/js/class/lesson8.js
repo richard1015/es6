@@ -55,6 +55,6 @@
     // 扩展运算符
     let { a, b, ...c } = { a: 'test', b: 'kill', c: 'ccc', d: 'ddd' };
     console.log(c);
-    //{c: "ccc", d: "ddd"}
+    //   {c: "ccc", d: "ddd"}
 }
 
