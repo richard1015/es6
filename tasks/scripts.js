@@ -37,6 +37,7 @@ gulp.task('scripts', () => {
         .pipe(named())
         //js 编译
         .pipe(gulpWebpack({
+            mode: "development",
             module: {
                 rules: [{
                     test: /\.js$/,
