@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./app/js/class/lesson12.js":
+/***/ "./app/js/class/lesson14.js":
 /*!**********************************!*\
-  !*** ./app/js/class/lesson12.js ***!
+  !*** ./app/js/class/lesson14.js ***!
   \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//  类   基本定义生成实例\n{\n    class Parent {\n\n        constructor(name = 'parent') {\n            this.name = name;\n        }\n    }\n    let p = new Parent('tt');\n    console.log('Parent', p);\n\n\n    // 继承\n    class Child extends Parent {\n        constructor(name = 'child') {\n            //super 第一行\n            super(name);\n\n            this.type = 'type';\n        }\n        // getter,setter 使用\n\n        get longName() {\n            return this.name + 'longname'\n        }\n        set longName(v) {\n            this.name = v;\n        }\n\n        // 静态方法\n        static tell() {\n            console.log('静态方法 tell');\n        }\n\n\n    }\n    //静态属性\n    Child.StaticAttr = '123';\n\n\n    let c = new Child('asd');\n    c.longName = 213123;\n    console.log('Child', c);\n    //静态方法\n    Child.tell()\n    console.log('静态属性', Child.StaticAttr)\n}\n\n\n//# sourceURL=webpack:///./app/js/class/lesson12.js?");
+eval("/* iterator */\n{\n    // 数组 iterator\n    let array = ['hello', 'world'];\n    let map = array[Symbol.iterator]();\n    console.log(map.next());\n    console.log(map.next());\n    console.log(map.next());\n}\n\n{\n    // start   obj 支持 for of\n    let obj = {\n        start: [1, 3, 2, 4],\n        end: [7, 9, 8],\n        [Symbol.iterator]() {\n            let index = 0;\n            let array = this.start.concat(this.end);\n            let length = array.length;\n            return {\n                next() {\n                    if (index < length) {\n                        return {\n                            value: array[index++],\n                            done: false\n                        }\n                    } else {\n                        return {\n                            value: array[index++],\n                            done: true\n                        }\n                    }\n                }   \n            }\n        }\n    }\n    console.log(obj[Symbol.iterator]().next())\n\n    for (let key of obj) {\n        console.log(key)\n    }\n}\n{\n    let array = ['hello', 'world'];\n    for (const iterator of array) {\n        console.log(iterator)\n    }\n}\n\n//# sourceURL=webpack:///./app/js/class/lesson14.js?");
 
 /***/ }),
 
@@ -105,7 +105,7 @@ eval("//  类   基本定义生成实例\n{\n    class Parent {\n\n        const
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _class_lesson12_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./class/lesson12.js */ \"./app/js/class/lesson12.js\");\n/* harmony import */ var _class_lesson12_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_class_lesson12_js__WEBPACK_IMPORTED_MODULE_0__);\n// class Test{\n//     constructor(){\n//         this.a='hello world 1'\n//     }\n// }\n\n// let test=new Test();\n\n// document.body.innerHTML=test.a;\n\n\n\n\n// import \"./class/lesson1.js\";\n// import \"./class/lesson2.js\";\n// import \"./class/lesson3.js\";\n\n// 兼容包\n// import 'babel-polyfill';\n// import \"./class/lesson4.js\";\n// import \"./class/lesson5.js\";\n// import \"./class/lesson6.js\";\n//不需要兼容包\n// import \"./class/lesson7.js\";\n// import \"./class/lesson8.js\";\n// import \"./class/lesson9.js\";\n// import \"./class/lesson10.js\";\n// import \"./class/lesson11.js\";\n\n\n//# sourceURL=webpack:///./app/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _class_lesson14_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./class/lesson14.js */ \"./app/js/class/lesson14.js\");\n/* harmony import */ var _class_lesson14_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_class_lesson14_js__WEBPACK_IMPORTED_MODULE_0__);\n// class Test{\n//     constructor(){\n//         this.a='hello world 1'\n//     }\n// }\n\n// let test=new Test();\n\n// document.body.innerHTML=test.a;\n\n\n\n\n// import \"./class/lesson1.js\";\n// import \"./class/lesson2.js\";\n// import \"./class/lesson3.js\";\n\n// 兼容包\n// import 'babel-polyfill';\n// import \"./class/lesson4.js\";\n// import \"./class/lesson5.js\";\n// import \"./class/lesson6.js\";\n//不需要兼容包\n// import \"./class/lesson7.js\";\n// import \"./class/lesson8.js\";\n// import \"./class/lesson9.js\";\n// import \"./class/lesson10.js\";\n// import \"./class/lesson11.js\";\n// import \"./class/lesson12.js\";\n// import \"./class/lesson13.js\";\n\n\n//# sourceURL=webpack:///./app/js/index.js?");
 
 /***/ }),
 
