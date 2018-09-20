@@ -86,14 +86,15 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./app/js/class/lesson14.js":
+/***/ "./app/js/class/lesson17.js":
 /*!**********************************!*\
-  !*** ./app/js/class/lesson14.js ***!
+  !*** ./app/js/class/lesson17.js ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/* iterator */\n{\n    // 数组 iterator\n    let array = ['hello', 'world'];\n    let map = array[Symbol.iterator]();\n    console.log(map.next());\n    console.log(map.next());\n    console.log(map.next());\n}\n\n{\n    // start   obj 支持 for of\n    let obj = {\n        start: [1, 3, 2, 4],\n        end: [7, 9, 8],\n        [Symbol.iterator]() {\n            let index = 0;\n            let array = this.start.concat(this.end);\n            let length = array.length;\n            return {\n                next() {\n                    if (index < length) {\n                        return {\n                            value: array[index++],\n                            done: false\n                        }\n                    } else {\n                        return {\n                            value: array[index++],\n                            done: true\n                        }\n                    }\n                }   \n            }\n        }\n    }\n    console.log(obj[Symbol.iterator]().next())\n\n    for (let key of obj) {\n        console.log(key)\n    }\n}\n{\n    let array = ['hello', 'world'];\n    for (const iterator of array) {\n        console.log(iterator)\n    }\n}\n\n//# sourceURL=webpack:///./app/js/class/lesson14.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// export let A = 123;\n// export function test() {\n//     console.log('test');\n// }\n// export class Hello {\n//     test() {\n//         console.log('class')\n//     }\n// }\n\n\n\nlet A = 123;\nlet test = function () {\n    console.log('test');\n}\nclass Hello {\n    test() {\n        console.log('class')\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    A,\n    test,\n    Hello\n});\n\n\n\n//# sourceURL=webpack:///./app/js/class/lesson17.js?");
 
 /***/ }),
 
@@ -105,7 +106,7 @@ eval("/* iterator */\n{\n    // 数组 iterator\n    let array = ['hello', 'worl
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _class_lesson14_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./class/lesson14.js */ \"./app/js/class/lesson14.js\");\n/* harmony import */ var _class_lesson14_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_class_lesson14_js__WEBPACK_IMPORTED_MODULE_0__);\n// class Test{\n//     constructor(){\n//         this.a='hello world 1'\n//     }\n// }\n\n// let test=new Test();\n\n// document.body.innerHTML=test.a;\n\n\n\n\n// import \"./class/lesson1.js\";\n// import \"./class/lesson2.js\";\n// import \"./class/lesson3.js\";\n\n// 兼容包\n// import 'babel-polyfill';\n// import \"./class/lesson4.js\";\n// import \"./class/lesson5.js\";\n// import \"./class/lesson6.js\";\n//不需要兼容包\n// import \"./class/lesson7.js\";\n// import \"./class/lesson8.js\";\n// import \"./class/lesson9.js\";\n// import \"./class/lesson10.js\";\n// import \"./class/lesson11.js\";\n// import \"./class/lesson12.js\";\n// import \"./class/lesson13.js\";\n\n\n//# sourceURL=webpack:///./app/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _class_lesson17_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./class/lesson17.js */ \"./app/js/class/lesson17.js\");\n// class Test{\n//     constructor(){\n//         this.a='hello world 1'\n//     }\n// }\n\n// let test=new Test();\n\n// document.body.innerHTML=test.a;\n\n\n\n\n// import \"./class/lesson1.js\";\n// import \"./class/lesson2.js\";\n// import \"./class/lesson3.js\";\n\n// 兼容包\n// import 'babel-polyfill';\n// import \"./class/lesson4.js\";\n// import \"./class/lesson5.js\";\n// import \"./class/lesson6.js\";\n//不需要兼容包\n// import \"./class/lesson7.js\";\n// import \"./class/lesson8.js\";\n// import \"./class/lesson9.js\";\n// import \"./class/lesson10.js\";\n// import \"./class/lesson11.js\";\n// import \"./class/lesson12.js\";\n// import \"./class/lesson13.js\";\n// import \"./class/lesson14.js\";\n// import \"./class/lesson15.js\";\n\n// 兼容包\n// import 'babel-polyfill';\n// import \"./class/lesson16.js\";\n\n//不需要兼容包\n// import { A, test, Hello } from \"./class/lesson17.js\";\n// import { A } from \"./class/lesson17.js\";\n// import * as lesson from \"./class/lesson17.js\";\n\n\nconsole.log(_class_lesson17_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n\n\n//# sourceURL=webpack:///./app/js/index.js?");
 
 /***/ }),
 

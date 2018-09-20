@@ -28,4 +28,17 @@
 // import "./class/lesson11.js";
 // import "./class/lesson12.js";
 // import "./class/lesson13.js";
-import "./class/lesson14.js";
+// import "./class/lesson14.js";
+// import "./class/lesson15.js";
+
+// 兼容包
+// import 'babel-polyfill';
+// import "./class/lesson16.js";
+
+//不需要兼容包
+// import { A, test, Hello } from "./class/lesson17.js";
+// import { A } from "./class/lesson17.js";
+// import * as lesson from "./class/lesson17.js";
+
+import lesson from "./class/lesson17.js";
+console.log(lesson)
