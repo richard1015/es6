@@ -40,5 +40,10 @@
 // import { A } from "./class/lesson17.js";
 // import * as lesson from "./class/lesson17.js";
 
-import lesson from "./class/lesson17.js";
-console.log(lesson)
+// import lesson from "./class/lesson17.js";
+// console.log(lesson)
+
+
+// 兼容包
+import 'babel-polyfill';
+import Lottery from './lottery';
